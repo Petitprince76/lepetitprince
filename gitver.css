@@ -13,7 +13,13 @@ body {
   position: fixed;
   width: 100%;
   height: 100%;
-  background: url('https://i.imgur.com/9QxQFzP.png');
+  /* background: url('https://i.imgur.com/9QxQFzP.png');
+  */
+
+   background-color: darkblue;  background-image: 
+     url('Image/Le Petit Prince-transparent.png'),
+    url('Image/étoiles-transparent.png');
+
   animation: moveStars 60s linear infinite;
   z-index: -1;
   opacity: 0.4;
