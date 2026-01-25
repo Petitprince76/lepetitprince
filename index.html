@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Le Petit Prince</title>
-  <link rel="stylesheet" href="gitver.css" />
-</head>i
+  <link rel="stylesheet" href="index.css">
+</head>
 
 <body>
   <div class="stars"></div>
 
-  <header>
-    <h1>Voyage du Petit Prince à Saint Aubin Celloville 🌌</h1>
-    <p class="subtitle">« On ne voit bien qu’avec le cœur. »</p>
+  <header class="header">
+    <h1>Le voyage du Petit Prince à Saint Aubin Celloville 🌌</h1>
+    <p class="subtitle">« L'essentiel est invisible pour les yeux »</p>
 
-    <nav>
+    <nav class="navbar">
       <ul>
         <li><a href="#accueil">Accueil</a></li>
-        <li><a href="#collection">Collection</a></li>
         <li><a href="#actus">Actualités</a></li>
+        <li><a href="#expo">L'exposition</a></li>
+        <li><a href="#collection">La collection</a></li>
+        <li><a href="#oeuvre">Le livre</a></li>
         <li><a href="#quiz">Quizz</a></li>
         <li><a href="#avis">Avis</a></li>
+        <li><a href="#liens">Liens</a></li>
+        <li><a href="#projet">Projet</a></li>
         <li><a href="#inscription">Inscription</a></li>
-        <li><a href="#footer">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -30,59 +33,146 @@
   <main>
 
     <!-- ACCUEIL -->
-    <section id="accueil" class="fade-in">
-      <h2>Bienvenue dans les étoiles</h2>
-      <p class="citation">« Tu deviens responsable pour toujours de ce que tu as apprivoisé. »</p>
-
-      <div class="bloc">
-        <img src="Image/Le Petit Prince.jpeg" alt="Le Petit Prince" class="mini-img">
-        <div class="bloc-texte">
-          <p class="sous-titre">« Préparatifs au voyage »</p>
-          <iframe src="Image/Le Petit Prince.pdf" width="100%" height="500" style="border:none;"></iframe>
-        </div>
+    <section id="accueil" class="onglet fade-in">
+      <div class="bloc_titre">
+        <h2>Bienvenue dans les étoiles</h2>
+        <p class="citation">Plonge dans l'univers magique du Petit Prince et découvre son prochain voyage à Saint Aubin Celloville.</p>
       </div>
 
-      <div class="bloc">
-        <img src="Image/Eglise.jpg" alt="Église" class="mini-img">
-        <div class="bloc-texte">
-          <p class="sous-titre">« La Destination »</p>
-          <iframe src="Image/Eglise.pdf" width="100%" height="500" style="border:none;"></iframe>
-        </div>
+      <div class="bloc_onglet">
+        <iframe src="Accueil/Accueil.html" width="100%" height="500" style="border:none;"></iframe>
       </div>
     </section>
 
-    <section id="collection" class="fade-in">
+    <!-- ACTUALITÉS -->
+    <section id="actus" class="onglet fade-in">
+     <div class="bloc_titre">
+        <h2>💡 Dernières actualités</h2>
+        <p class="citation">Au fil du voyage, ne manque rien des étoiles à venir...</p>
+      </div>
+
+      <div class="bloc_onglet">
+        <iframe src="Actualités/Actualités.html" width="100%" height="500" style="border:none;"></iframe>
+      </div>
+    </section>
+
+    <!-- EXPOSITION -->
+    <section id="expo" class="onglet fade-in">
+      <div class="bloc_titre">
+        <h2>💡 Les objets apprivoisés</h2>
+        <p class="citation">Toutes les grandes personnes ont d’abord été des enfants. ( Mais peu d’entre elles s’en souviennent.)</p>
+      </div>
+
+      <div class="bloc_onglet">
+        <iframe src="Expo/Expo.html" width="100%" height="500" style="border:none;"></iframe>
+      </div>
+    </section>
+
+    <!-- COLLECTION -->
+    <section id="collection" class="onglet fade-in">
       <h2>🌹 <a href="Collection2.php">Collection</a></h2>
       <p>Explore les objets apprivoisés du Petit Prince.</p>
     </section>
 
-    <section id="actus" class="fade-in">
-      <h2>💡 Dernières actualités</h2>
-      <p>Ne rate rien des étoiles à venir.</p>
+    <!-- OEUVRE -->
+    <section id="oeuvre" class="onglet fade-in">
+      <div class="bloc_titre">
+        <h2>🌹 Une rencontre</h2>
+        <p class="citation">Raconte moi Le Petit Prince.</p>
+     </div>  
+  
+      <div class="bloc_onglet">
+        <p class="citation">Un résumé.</p>
+        <iframe src="Livre/Le Petit Prince.pdf" width="100%" height="500" style="border:none;"></iframe>
+      </div>
+
+      <div class="bloc_onglet">
+        <p class="citation">Version complète</p>
+        <iframe src="Livre/Le Petit Prince.html" width="100%" height="500" style="border:none;"></iframe>
+      </div>
     </section>
 
-    <section id="quiz" class="fade-in">
+    <!-- QUIZ -->
+    <section id="quiz" class="onglet fade-in">
       <h2>🐍 Quizz</h2>
       <p>Teste ta connaissance du Petit Prince.</p>
     </section>
 
-    <section id="avis" class="fade-in">
+    <!-- AVIS -->
+    <section id="avis" class="onglet fade-in">
       <h2>🦊 Avis des voyageurs</h2>
       <p>Ceux qui l’ont apprivoisé en parlent.</p>
     </section>
 
-    <section id="inscription" class="fade-in">
+    <!-- LIENS -->
+    <section id="liens" class="onglet fade-in">
+     <div class="bloc_titre">
+      <h2>🔗 Liens utiles</h2>
+      <p>Retrouve ici tous les liens vers les ressources du Petit Prince.</p>
+     </div>
+
+     <div class="bloc_onglet">
+       <ul>
+         <li><a href="https://www.exemple.com">Exemple 1</a></li>
+         <li><a href="https://www.exemple.com">Exemple 2</a></li>
+         <li><a href="https://www.exemple.com">Exemple 3</a></li>
+       </ul>
+     </div>
+
+    </section>
+
+    <!--PROJET -->
+    <section id="projet" class="onglet fade-in">
+      <div class="bloc_titre">
+        <h2>🌹 Une rencontre </h2>
+        <p class="citation">Raconte moi Le Petit Prince.</p>
+     </div>  
+
+        <div class="bloc_onglet">
+          <iframe src="Projet/Projet.pdf" width="100%" height="500" style="border:none;"></iframe>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- INSCRIPTION -->
+    <section id="inscription" class="onglet fade-in">
       <h2>👑 Inscription</h2>
       <p>Rejoins l’univers et crée ton étoile.</p>
     </section>
 
   </main>
 
-  <footer id="footer">
-    <p>📨 Contact : contact@petitunivers.fr</p>
+  <footer id="footer" class="footer">
+    <p>📨 Contact : eric.larmet@viacesi.fr</p>
     <p>🔗 Réseaux sociaux | Mentions légales</p>
   </footer>
+
+  <!-- SCRIPT ONGLET -->
+  <script>
+    function afficherOnglet(id) {
+      const onglets = document.querySelectorAll('.onglet');
+      onglets.forEach(o => o.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+    }
+
+    const liens = document.querySelectorAll('nav a');
+
+    liens.forEach(lien => {
+      lien.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        liens.forEach(l => l.classList.remove('active'));
+        this.classList.add('active');
+
+        const cible = this.getAttribute('href').substring(1);
+        afficherOnglet(cible);
+      });
+    });
+
+    afficherOnglet('accueil');
+    document.querySelector('nav a[href="#accueil"]').classList.add('active');
+  </script>
+
 </body>
 </html>
-
-

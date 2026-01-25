@@ -1,0 +1,161 @@
+/* --- RESET SIMPLE --- */
+body, h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #0b0f2f;
+  color: white;
+}
+
+body {
+  margin: 10px;
+  padding: 10px;
+  font-family: 'Georgia', serif;
+  color: #f9f2e7;
+  background-color: darkblue;  background-image: 
+     url('Image/Le Petit Prince-transparent.png'),
+    url('Image/étoiles-transparent.png');
+  background-repeat: 
+    no-repeat,
+    repeat;
+  background-position: 
+    center center,   
+    center center; 
+  background-size: 
+    auto 100vh,            
+    auto auto;
+      background-attachment: 
+    fixed, 
+    fixed;
+}
+
+/* --- HEADER --- */
+header {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(5px);
+}
+
+.subtitle {
+  font-style: italic;
+  opacity: 0.8;
+}
+
+/* --- NAVBAR --- */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+  backdrop-filter: blur(4px);
+}
+
+nav a {
+  color: #ffd27f;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 16px;
+  border-radius: 6px;
+  transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+
+/* Survol */
+nav a:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+/* ⭐ Onglet actif (surbrillance visible) */
+nav a.active {
+  background: rgba(255, 210, 127, 0.45);
+  color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 0 12px rgba(255, 210, 127, 0.8);
+  border-bottom: 2px solid #ffd27f;
+  transform: translateY(-2px);
+}
+
+/* --- SECTIONS --- */
+.onglet {
+  display: none;
+  padding: auto;
+  max-width: auto;
+  margin: auto;
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: #f0ff7f;
+}
+
+/* --- BLOCS PDF + IMAGE --- */
+.bloc {
+  display: flex;
+  gap: 20px;
+  margin: 30px 0;
+  background: rgba(255,255,255,0.15);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* --- BLOCS TITRES ONGLETS --- */
+.bloc_titre {
+  /*display: flex;*/
+  gap: 20px;
+  margin: 30px 0;
+  background: oklch(0% 0 0 / 0.765);
+  padding: 20px;
+  border-radius: 10px;
+}
+.bloc_chapitre {
+  display: flex;
+  gap: 20px;
+  margin: 30px 0;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+}
+.bloc_citation {
+  display: flex;
+  gap: 20px;
+  margin: 30px 0;
+  background: rgba(255,255,255,0.25);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* --- BLOCS HTML ONGLETS --- */
+.bloc_onglet {
+  display: flex;
+  gap: 20px;
+  margin: 30px 0;
+  background: rgba(255,255,255,0.80);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.mini-img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.bloc-texte h3 {
+  margin-bottom: 10px;
+  color: #ffd27f;
+}
+
+/* --- FOOTER --- */
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  background: rgba(0,0,0,0.4);
+}
