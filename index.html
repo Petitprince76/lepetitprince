@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le Petit Prince</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+  <!-- HEADER PLEINE LARGEUR -->
+  <header class="header">
+    <button id="toggleNavbar" class="toggle-navbar">☰</button>
+    <h1>Le voyage du Petit Prince à Saint Aubin Celloville 🌌</h1>
+    <p class="subtitle">« L'essentiel est invisible pour les yeux »</p>
+  </header>
+
+  <div class="layout">
+
+    <!-- NAVBAR À GAUCHE SOUS LE HEADER -->
+    <nav class="navbar hidden" id="navbar">
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#Contexte">Contexte</a></li>
+        <li><a href="#expo">L'exposition</a></li>
+        <li><a href="#Infos">Infos pratiques</a></li>
+        <li><a href="#collection">La collection</a></li>
+        <li><a href="#oeuvre">Le Petit Prince</a></li>
+        <li><a href="#Enfants">Les enfants</a></li>
+        <li><a href="#liens">Liens</a></li>
+        <li><a href="#avis">Avis</a></li>
+
+      </ul>
+    </nav>
+
+    <!-- CONTENU À DROITE -->
+    <div id="contenu" class="expanded">
+
+      <main>
+
+        <!-- ACCUEIL -->
+        <section id="accueil" class="onglet fade-in">
+          <div class="bloc_titre">
+            <h2>Un évènement exceptionnel à Saint Aubin Celloville ! <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Document</title>
+            </head>
+            <body>
+                
+            </body>
+            </html></h2>
+            <p class="citation">"Moi, se dit le petit prince, si j'avais cinquante-trois minutes à dépenser, je marcherais tout doucement vers une fontaine..."</p>
+          </div>
+
+          <div class="bloc_onglet">
+            <iframe src="Accueil/Accueil.html"></iframe>
+          </div>
+        </section>
+
+        <!-- CONTEXTE -->
+        <section id="Contexte" class="onglet fade-in">
+          <div class="bloc_titre">
+            <h2>Contexte</h2>
+            <p class="citation">« Il faut créer des liens. »</p>
+          </div>
+
+          <div class="bloc_onglet">
+            <iframe src="Contexte/Contexte.html"></iframe>
+          </div>
+        </section>
+
+        <!-- EXPOSITION -->
+        <section id="expo" class="onglet fade-in">
+          <div class="bloc_titre">
+            <h2>L'exposition</h2>
+            <p class="citation">« Je les possèdes. »</p>
+          </div>
+
+          <div class="bloc_onglet">
+            <iframe src="Expo/Expo.html"></iframe>
+          </div>
+        </section>
+
+        <!-- INFOS PRATIQUES -->
+        <section id="Infos" class="onglet fade-in">
+          <div class="bloc_titre">
+            <h2>Infos pratiques</h2>
+            <p class="citation">« Si ! Si ! C'est bien le jour, mais ce n'est pas ici l'endroit...»</p>
+          </div>
+
+          <div class="bloc_onglet">
+            <iframe src="Infos_Pratiques/Info_Pratique.html"></iframe>
+          </div>
+        </section>
+
+        <!-- COLLECTION -->
+        <section id="collection" class="onglet fade-in">
+          <div class="bloc_titre">
+            <h2>La collection</h2>
+            <p class="citation">« Les objets ont une âme quand on sait les apprivoiser. »</p>
+          </div>
+
+          <div class="bloc_onglet">
+            <p>Explore les objets apprivoisés du Petit Prince.</p>
+          </div>
+        </section>
+
+        <!-- OEUVRE -->
+        <section id="oeuvre" class="onglet fade-in">
+          <div class="bloc_titre">
+            <h2>Le Petit Prince</h2>
+            <p class="citation">« Dessine-moi un mouton...»</p>
+          </div>
+
+          <div class="bloc_onglet">
+            <iframe src="Livre/Le Petit Prince.html"></iframe>
+          </div>
+        </section>
+
+        <!-- ENFANTS -->
+        <section id="Enfants" class="onglet fade-in">
+          <div class="bloc_titre">
+            <h2>Les enfants</h2>
+            <p class="citation">« On ne voit bien qu'avec le coeur »</p>
+          </div>
+
+          <div class="bloc_onglet">
+            <iframe src="Enfants/Enfants.html"></iframe>
+          </div>
+        </section>
+
+        <!-- LIENS -->
+        <section id="liens" class="onglet fade-in">
+          <div class="bloc_titre">
+            <h2>Liens</h2>
+          </div>
+
+          <div class="bloc_onglet">
+            <iframe src="Liens/Liens.html"></iframe>
+          </div>
+        </section>
+
+        <!-- AVIS -->
+        <section id="avis" class="onglet fade-in">
+          <div class="bloc_titre">
+            <h2>Avis des voyageurs</h2>
+            <p class="citation">« Ceux que l’on apprivoise laissent une trace dans notre cœur. »</p>
+          </div>
+
+          <div class="bloc_onglet">
+            <!-- Avis form -->
+            <form id="avisForm" class="avis-form">
+              <label for="nom">Nom</label>
+              <input id="nom" name="Nom" type="text" required />
+
+              <label for="contenuInput">Votre avis</label>
+              <textarea id="contenuInput" name="Contenu" rows="4" required></textarea>
+
+              <div style="display:flex;gap:10px;align-items:center;margin-top:8px;">
+                <button type="submit">Envoyer</button>
+                <div id="avisMessage" class="message" aria-live="polite"></div>
+              </div>
+            </form>
+
+            <div id="avisList" class="avis-list"></div>
+
+            <!-- Supabase client + Avis script -->
+            <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js/dist/umd/supabase.min.js"></script>
+            <script>
+            document.addEventListener('DOMContentLoaded', () => {
+              const SUPABASE_URL = 'https://xwtvbkqzwgdmxnbgbgmw.supabase.co';
+              const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inh3dHZia3F6d2dkbXhuYmdiZ213Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzE3NzIzOTQsImV4cCI6MjA4NzM0ODM5NH0.kY1ljJR04cCxOMutZGGbFsu73zsFmh600_gLzAUXwZ0';
+              const { createClient } = supabase;
+
+              // In-memory storage fallback to avoid Tracking Prevention blocking
+              // (prevents attempts to access localStorage/IndexedDB from CDN script)
+              const inMemoryStorage = {
+                _data: {},
+                getItem(key) { return this._data[key] ?? null; },
+                setItem(key, value) { this._data[key] = String(value); },
+                removeItem(key) { delete this._data[key]; }
+              };
+
+              const sb = createClient(SUPABASE_URL, SUPABASE_KEY, {
+                auth: {
+                  storage: inMemoryStorage,
+                  persistSession: false
+                }
+              });
+
+              const form = document.getElementById('avisForm');
+              const list = document.getElementById('avisList');
+              const msg = document.getElementById('avisMessage');
+
+              function escapeHtml(s){
+                return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c]));
+              }
+
+              async function loadAvis(){
+                list.innerHTML = '<p>Chargement…</p>';
+                const { data, error } = await sb.from('avis').select('id, Nom, Contenu, created_at').order('created_at', { ascending: false }).limit(20);
+                if (error) {
+                  list.innerHTML = '<p>Erreur de chargement des avis.</p>';
+                  console.error(error);
+                  return;
+                }
+                if (!data || data.length === 0){
+                  list.innerHTML = '<p>Aucun avis pour l\'instant.</p>';
+                  return;
+                }
+                list.innerHTML = data.map(a => `\n                <div class="avis-item">\n                  <div class="avis-meta"><strong>${escapeHtml(a.Nom)}</strong> · <span class="date">${new Date(a.created_at).toLocaleString()}</span></div>\n                  <p>${escapeHtml(a.Contenu)}</p>\n                </div>`).join('');
+              }
+
+              form.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const nom = document.getElementById('nom').value.trim();
+                const contenu = document.getElementById('contenuInput').value.trim();
+                if (!nom || !contenu){ msg.textContent = 'Veuillez remplir les deux champs.'; return; }
+                msg.textContent = 'Envoi…';
+                const { data, error } = await sb.from('avis').insert([{ Nom: nom, Contenu: contenu }]).select();
+                if (error){ msg.textContent = 'Erreur lors de l\'envoi.'; console.error(error); return; }
+                msg.textContent = 'Merci — votre avis a été ajouté.';
+                form.reset();
+                loadAvis();
+
+                // close navbar on small screens after submit
+                const navbar = document.getElementById('navbar');
+                const contenuEl = document.getElementById('contenu');
+                if (navbar && contenuEl){
+                  navbar.classList.add('hidden');
+                  contenuEl.classList.add('expanded');
+                }
+              });
+
+              loadAvis();
+            });
+          </script>          
+        </div>
+        </section>
+
+  
+      </main>
+
+      <footer id="footer" class="footer">
+        <p>📨 Contact : eric.larmet@viacesi.fr</p>
+        <p>🔗 Réseaux sociaux | Mentions légales</p>
+      </footer>
+
+    </div>
+  </div>
+
+  <!-- SCRIPT TOGGLE NAVBAR -->
+  <script>
+    const toggleBtn = document.getElementById('toggleNavbar');
+    const navbar = document.getElementById('navbar');
+    const contenu = document.getElementById('contenu');
+    let navbarVisible = false;
+
+    toggleBtn.addEventListener('click', function() {
+      navbarVisible = !navbarVisible;
+      if (navbarVisible) {
+        navbar.classList.remove('hidden');
+        contenu.classList.remove('expanded');
+      } else {
+        navbar.classList.add('hidden');
+        contenu.classList.add('expanded');
+      }
+    });
+  </script>
+
+  <!-- SCRIPT ONGLET -->
+  <script>
+    function afficherOnglet(id) {
+      const onglets = document.querySelectorAll('.onglet');
+      onglets.forEach(o => o.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+    }
+
+    const liens = document.querySelectorAll('nav a');
+
+    liens.forEach(lien => {
+      lien.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        liens.forEach(l => l.classList.remove('active'));
+        this.classList.add('active');
+
+        const cible = this.getAttribute('href').substring(1);
+        afficherOnglet(cible);
+
+        // Close navbar after selecting an option
+        navbar.classList.add('hidden');
+        contenu.classList.add('expanded');
+        navbarVisible = false;
+      });
+    });
+
+    afficherOnglet('accueil');
+    document.querySelector('nav a[href="#accueil"]').classList.add('active');
+  </script>
+
+  <!-- SCRIPT POUR COLORER LES IFRAMES EN BLANC ET OUVRIR LES LIENS EXTERNES EN NOUVELLES PAGES -->
+  <script>
+    function styleAllIframes() {
+      const iframes = document.querySelectorAll('iframe'); 
+      iframes.forEach(iframe => {
+        iframe.addEventListener('load', function() {
+          try {
+            // Accéder au document de l'iframe
+            const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+            
+            if (iframeDoc) {
+              // Injecter un style avec couleur blanche et sans scrollbar
+              const style = document.createElement('style');
+              style.textContent = `
+                html, body, * {
+                  color: #f0ff7f !important;
+                }
+                html, body {
+                  scrollbar-width: none; /* Firefox */
+                  -ms-overflow-style: none; /* IE and Edge */
+                }
+                ::-webkit-scrollbar {
+                  display: none; /* Chrome, Safari and Opera */
+                }
+                /* Mobile responsive sizing */
+                @media (max-width: 768px) {
+                  html, body {
+                    font-size: 12px !important;
+                  }
+                  body {
+                    padding: 10px !important;
+                    margin: 0 !important;
+                  }
+                  h1, h2, h3, h4, h5, h6 {
+                    font-size: 0.9em !important;
+                    margin: 8px 0 !important;
+                    padding: 5px !important;
+                  }
+                  p {
+                    margin: 5px 0 !important;
+                    padding: 0 !important;
+                  }
+                  table {
+                    font-size: 11px !important;
+                    margin: 5px 0 !important;
+                  }
+                  td, th {
+                    padding: 3px !important;
+                  }
+                  img {
+                    max-width: 100% !important;
+                    height: auto !important;
+                  }
+                  div, section, article {
+                    padding: 5px !important;
+                    margin: 5px 0 !important;
+                  }
+                }
+              `;
+              
+              // Ajouter le style au head de l'iframe
+              if (iframeDoc.head) {
+                iframeDoc.head.appendChild(style);
+              } else {
+                // Créer un head s'il n'existe pas
+                const head = iframeDoc.createElement('head');
+                head.appendChild(style);
+                iframeDoc.insertBefore(head, iframeDoc.firstChild);
+              }
+              
+              // Ajouter target="_blank" à tous les liens externes
+              const links = iframeDoc.querySelectorAll('a[href^="http"], a[href^="https"]');
+              links.forEach(link => {
+                link.setAttribute('target', '_blank');
+              });
+            }
+          } catch (error) {
+            console.error('Erreur lors du stylage de l\'iframe:', error);
+          }
+        });
+      });
+    }
+    
+    // Appliquer les styles au chargement du document
+    document.addEventListener("DOMContentLoaded", styleAllIframes);
+  </script>
+
+</body>
+</html>
