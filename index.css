@@ -19,7 +19,7 @@ body {
      url('Image/Etoiles-transparent.png');
   background-repeat: no-repeat, repeat;
   background-position: center center, center center;
-  background-size: auto 100vh, auto auto;
+  background-size: auto 60vh, auto auto;
   background-attachment: fixed, fixed;
 }
 
