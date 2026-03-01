@@ -43,7 +43,7 @@ header {
 /* --- police menu --- */
 .Menu {
   position: absolute;
-  left: 0px;
+  left: 5px;
   top: 20%;
   transform: translateY(-50%);
   color: #ffd27f;
@@ -53,8 +53,8 @@ header {
   cursor: pointer;
   transition: all 0.3s ease;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
 }
 /* --- TOGGLE NAVBAR BUTTON --- */
 .toggle-navbar {
